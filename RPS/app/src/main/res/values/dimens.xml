@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="name_size">16sp</dimen>
+    <dimen name="score_size">24sp</dimen>
+    <dimen name="start_text_size">24sp</dimen>
+    <dimen name="gap_size">16dp</dimen>
+</resources>

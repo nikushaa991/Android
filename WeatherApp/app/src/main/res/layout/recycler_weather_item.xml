@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/recycler_item_height"
+    android:background="@null">
+
+  <TextView
+      android:id="@+id/dateText"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:layout_marginEnd="@dimen/margin_small"
+      android:layout_marginRight="@dimen/margin_small"
+      android:gravity="center_vertical"
+      android:text="@string/content_description"
+      android:textColor="@color/white"
+      android:textSize="@dimen/text_size_small" />
+
+  <ImageView
+      android:id="@+id/iconImage"
+      android:layout_width="@dimen/recycler_icon_size"
+      android:layout_height="@dimen/recycler_icon_size"
+      android:layout_gravity="center"
+      android:layout_marginEnd="@dimen/margin_small"
+      android:layout_marginRight="@dimen/margin_small"
+      android:adjustViewBounds="true"
+      android:background="@null"
+      android:contentDescription="@string/content_description"
+      android:scaleType="fitCenter"
+      app:srcCompat="@drawable/hourly" />
+
+  <TextView
+      android:id="@+id/temperatureText"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:layout_marginEnd="@dimen/margin_small"
+      android:layout_marginRight="@dimen/margin_small"
+      android:gravity="center_vertical"
+      android:text="@string/content_description"
+      android:textColor="@color/white"
+      android:textSize="@dimen/recycler_temperature_size"
+      android:textStyle="bold" />
+
+  <TextView
+      android:id="@+id/descriptionText"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:gravity="start|center_vertical"
+      android:text="@string/content_description"
+      android:textColor="@color/white"
+      android:textSize="@dimen/text_size_small" />
+
+</LinearLayout>

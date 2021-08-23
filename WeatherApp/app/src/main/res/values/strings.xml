@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Weather App</string>
+    <string name="content_description">Placeholder</string>
+    <string name="default_capital">TBILISI</string>
+    <string name="details">DETAILS</string>
+    <string name="temperature">Temperature</string>
+    <string name="feelslike">Feels Like</string>
+    <string name="humidity">Humidity</string>
+    <string name="pressure">Pressure</string>
+
+    <string name="temperature_value">%1$.1f°</string>
+    <string name="humidity_value">%1$d%%</string>
+
+</resources>

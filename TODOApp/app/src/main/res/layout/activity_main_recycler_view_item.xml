@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/small_div"
+    android:background="@drawable/rounded_corners"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="@integer/max_lines_title"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_big" />
+
+    <CheckBox
+        android:id="@+id/checkbox1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/checkbox_negative"
+        android:layout_marginLeft="@dimen/checkbox_negative"
+        android:layout_marginTop="@dimen/big_div"
+        android:background="@android:color/transparent"
+        android:clickable="false"
+        android:ellipsize="end"
+        android:maxLines="@integer/max_lines_item"
+        android:minHeight="@dimen/checkbox_min" />
+
+    <CheckBox
+        android:id="@+id/checkbox2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/checkbox_negative"
+        android:layout_marginLeft="@dimen/checkbox_negative"
+        android:layout_marginTop="@dimen/big_div"
+        android:background="@android:color/transparent"
+        android:clickable="false"
+        android:ellipsize="end"
+        android:maxLines="@integer/max_lines_item"
+        android:minHeight="@dimen/checkbox_min" />
+
+    <CheckBox
+        android:id="@+id/checkbox3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/checkbox_negative"
+        android:layout_marginLeft="@dimen/checkbox_negative"
+        android:layout_marginTop="@dimen/big_div"
+        android:background="@android:color/transparent"
+        android:clickable="false"
+        android:ellipsize="end"
+        android:maxLines="@integer/max_lines_item"
+        android:minHeight="@dimen/checkbox_min" />
+
+    <TextView
+        android:id="@+id/ellipses"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/small_div"
+        android:text="@string/ellipses"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_small"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/pinnedLayoutItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/small_div"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/checked_first"
+            android:textColor="@color/gray_600"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:id="@+id/pinnedNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/gray_600"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/checked_second"
+            android:textColor="@color/gray_600"
+            android:textSize="@dimen/text_small" />
+    </LinearLayout>
+
+</LinearLayout>

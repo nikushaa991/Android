@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AlarmApp</string>
+    <string name="placeholder">Placeholder</string>
+    <string name="theme">theme</string>
+</resources>

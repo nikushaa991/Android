@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".scenes.edit.EditActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="@dimen/big_div">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar">
+
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="@dimen/icons_size"
+                android:layout_height="@dimen/icons_size"
+                android:layout_gravity="start"
+                android:background="@null"
+                android:contentDescription="@string/ellipses"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_back"
+                android:tint="@color/gray_600" />
+
+            <ImageButton
+                android:id="@+id/pinButton"
+                android:layout_width="@dimen/icons_size"
+                android:layout_height="@dimen/icons_size"
+                android:layout_gravity="end"
+                android:background="@null"
+                android:contentDescription="@string/ellipses"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_pin"
+                android:tint="@color/gray_600" />
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/nameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:ellipsize="end"
+            android:hint="@string/name_hint"
+            android:importantForAutofill="no"
+            android:inputType="textCapSentences"
+            android:maxLines="@integer/max_lines_title"
+            android:textSize="@dimen/text_big" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/editUncheckedRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                tools:itemCount="10"
+                tools:listitem="@layout/activity_edit_recycler_view_unchecked_item">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/big_div"
+            android:layout_marginBottom="@dimen/big_div"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/addButton"
+                android:layout_width="@dimen/icons_size"
+                android:layout_height="@dimen/icons_size"
+                android:layout_gravity="start"
+                android:layout_marginEnd="@dimen/small_div"
+                android:layout_marginRight="@dimen/small_div"
+                android:background="@null"
+                android:contentDescription="@string/ellipses"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_add"
+                android:tint="@color/gray_400" />
+
+            <TextView
+                android:id="@+id/itemNameText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/add_text"
+                android:importantForAutofill="no"
+                android:textSize="@dimen/text_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/checkedLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/border_width"
+                android:background="@color/gray_400" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/editCheckedRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:overScrollMode="never"
+                    tools:itemCount="15"
+                    tools:listitem="@layout/activity_edit_recycler_view_checked_item" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

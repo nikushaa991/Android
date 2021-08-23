@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/checkedCheckbox"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/small_div"
+    android:layout_marginBottom="@dimen/small_div"
+    android:checked="true"
+    android:clickable="true"
+    android:ellipsize="end"
+    android:focusable="true"
+    android:maxLines="@integer/max_lines_item"
+    android:minHeight="@dimen/checkbox_min"
+    android:textColor="@color/gray_400"
+    app:buttonTint="@color/gray_400" />

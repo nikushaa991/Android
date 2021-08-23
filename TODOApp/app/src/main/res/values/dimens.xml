@@ -1,0 +1,13 @@
+<resources>
+    <dimen name="text_big">18sp</dimen>
+    <dimen name="text_small">14sp</dimen>
+    <dimen name="small_div">8dp</dimen>
+    <dimen name="big_div">16dp</dimen>
+    <dimen name="toolbar">50dp</dimen>
+    <dimen name="icons_size">20dp</dimen>
+    <dimen name="border_width">1dp</dimen>
+    <dimen name="border_radius">10dp</dimen>
+    <dimen name="checkbox_text_offset">-16dp</dimen>
+    <dimen name="checkbox_negative">-7dp</dimen>
+    <dimen name="checkbox_min">0dp</dimen>
+</resources>

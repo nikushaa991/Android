@@ -1,0 +1,4 @@
+<resources>
+    <integer name="max_lines_item">1</integer>
+    <integer name="max_lines_title">2</integer>
+</resources>

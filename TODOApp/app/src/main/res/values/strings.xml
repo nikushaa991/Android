@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TODO App</string>
+    <string name="search_hint">Search your notes</string>
+    <string name="pinned">PINNED</string>
+    <string name="other">OTHER</string>
+    <string name="ellipses">…</string>
+    <string name="checked_first">+ </string>
+    <string name="checked_second">&#160;checked items</string>
+    
+    <string name="name_hint">Type name here</string>
+    <string name="add_text">List item</string>
+</resources>
